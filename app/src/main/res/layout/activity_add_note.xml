@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5"
+    tools:context=".AddEidtNoteActivity">
+
+    <EditText
+        android:id="@+id/edit_text_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:hint="Title"
+        android:inputType="text"
+
+        android:textColorHighlight="#039BE5"
+        android:textColorHint="#102E2E"
+        android:textColorLink="#039BE5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"></EditText>
+
+    <EditText
+        android:id="@+id/edit_text_description"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="144dp"
+        android:hint="Description"
+        android:inputType="textMultiLine"
+        android:shadowColor="#00ACC1"
+        android:textColorHighlight="#039BE5"
+        android:textColorHint="#173833"
+        android:textColorLink="#039BE5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </EditText>
+
+    <TextView
+        android:id="@+id/textView_add_priority"
+        android:layout_width="63dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="152dp"
+        android:layout_marginTop="208dp"
+        android:shadowColor="#00ACC1"
+        android:text="Priority"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="#06302A"
+        android:textColorHighlight="#039BE5"
+        android:textColorLink="#039BE5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </TextView>
+
+    <NumberPicker
+        android:id="@+id/number_picker_priority"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="152dp"
+        android:layout_marginTop="248dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </NumberPicker>
+</androidx.constraintlayout.widget.ConstraintLayout>
